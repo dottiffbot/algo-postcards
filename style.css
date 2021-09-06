@@ -1,8 +1,3 @@
-@font-face{
-	font-family: 'Gyrator';
-	src: url(./assets/ThePyteFoundry--Gyrator.otf);
-}
-
 
 @font-face{
 	font-family: 'Suisse';
@@ -34,24 +29,23 @@ grid-template-rows: 2fr;
 	text-transform: capitalize;
 	mix-blend-mode: difference;
 
-	/*padding: 0 2em;*/
 	z-index: 3;
 -webkit-text-stroke-width: 1px;
--webkit-text-stroke-color: white;
+-webkit-text-stroke-color: #BAE5E8;
 
 display: grid;
 grid-template-columns: repeat(2, 1fr);
 grid-gap: 2px;
 align-items: center;
-justify-content: center;
+/*justify-content: center;*/
 
 }
 
 .letters{
 	border: 5px ridge #cc4651;
-	margin: 2em 4em;
+	margin: 1em 4em 2em 4em;
 	padding: 0.25em 0.5em;
-	box-shadow: 10px 10px 5px pink;
+	box-shadow: 10px 10px 5px #CC7C66;
 
 }
 
@@ -63,7 +57,7 @@ justify-content: center;
 
 .write{
 	float: right;
-	margin-right: 8em;
+	margin-right: 10em;
 }
 
 
@@ -89,3 +83,28 @@ justify-content: center;
 	margin: 3em;
 	align-self: center;
 }
+
+.cardBack{
+	position: absolute;
+	z-index: 3;
+	width: 50vw;
+	height: 100vh;
+	margin-top: 80%;
+	margin-left: 26%;
+
+}
+
+.inputs{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin: 2em 5em;
+}
+input[type="text"]{
+	margin: 2em;
+	border-radius: 50px;
+	color:#338474;
+
+}
+
+
