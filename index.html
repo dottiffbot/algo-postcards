@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>postcards</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+	<link rel = "icon" href="assets/hand.png">
+	  <script src="https://cdn.jsdelivr.net/npm/p5@1.4.0/lib/p5.js"></script>
+    <script src="sketch.js" defer></script>
+
+</head>
+<body>
+	<main>
+			<div class="student"></div>
+		<div class="p5canvas">
+			<script type="text/javascript">
+			
+				let arm;
+				var canvas;
+				let g;
+				let newColor, amt;
+
+				function windowResized(){
+					resizeCanvas(windowWidth, windowHeight);
+
+				}
+
+
+				function preload(){
+
+					arm = loadModel('assets/arm.obj', true)
+
+				}
+		
+			
+		
+				function setup(){
+
+					g= color('#b1e866');
+					newColor = color(random(255), random(255), random(255));
+					amt = 0;
+
+					canvas =  createCanvas(windowWidth, windowHeight, WEBGL);
+
+					canvas.position(0,0);
+					background(g);
+
+				}
+
+				function draw(){
+
+					  let p = color('#cc4651');
+					
+					noFill();
+					stroke(43, 130, 129);
+					strokeWeight(5);
+					ellipse(0, 0, windowWidth/2, windowHeight-75, 50);
+
+
+					stroke(0);
+					strokeWeight(1);
+
+					fill(p);
+					//rotate(PI / 3.2);
+					push ();
+					rotateZ(frameCount * -0.001)
+					rect(0, 0, 45, 450);
+					pop();
+
+
+					scale(2)
+
+                    rotateZ(frameCount * 0.01);
+                    normalMaterial();
+                    model(arm);
+
+
+                     // referenced this for lerp bg on mouse pressed:  https://discourse.processing.org/t/fade-between-random-colours-for-a-background/1433
+
+
+                      if(mouseIsPressed){
+                     background(lerpColor(g, newColor, amt));
+                     amt += 0.2;
+                     if (amt >= 1){
+                     	amt = 0.0;
+                     	g = newColor;
+                     	newColor = color(random(255), random(255), random(255));
+                     }
+                 }
+
+             //     if(keyIsPressed){
+
+             //     saveCanvas('postcard', 'png');
+             //     print('it is pressed');
+             // }
+
+
+
+				}
+
+			
+
+
+			</script>
+		</div>
+		<div class="bg">
+			<div class="back">
+				<section class="write">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</section>
+			</div>
+			<div class="back"></div>
+		</div>
+	
+	
+
+</main>
+
+</body>
+</html>
+
