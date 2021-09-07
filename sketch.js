@@ -4,8 +4,8 @@ let name = 0
 
 
 const firstName = [
-"munus✌✉✿", "lu✌✿lu✌✿", "lingyi✉✌", "lauria✉✿", "emily✌✿✉", "zoe✌zoe✌", "annaanna", "yingying", "sydney✿✉",
-"carla✌✿✉", "jessie✉✌", "shamail✌", "zhicun✉✌", "simone✉✿", "minghui✌", "nikki✌✿✉", "bhuvaneesh", "justin✿✉","talia✌✿✉"
+"munus✌✉✿", "lu✌✿lu✌✿", "lingyi✉✌", "lauria✉✿", "emily✌✿✉", "zoë✌zoë✌", "anyaanya", "yingying", "sydney✿✉",
+"carla✌✿✉", "jessie✉✌", "shamail✌", "zhicun✉✌", "simone✉✿", "minghui✌", "nikki✌✿✉", "bhuvaneesh", "justin✿✉","talia✌✿✉", "nanwei✌✉"
 ]
 
 const student= document.querySelector(".student")

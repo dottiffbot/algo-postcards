@@ -55,34 +55,7 @@ align-items: center;
 	height: 100%;
 }
 
-.write{
-	float: right;
-	margin-right: 10em;
-}
 
-
-.back{
-	width:100vw;
-	height: 100vh;
-
-}
-
-.bg{
-	display: flex;
-	flex-direction: column;
-}
-
-
-.line{
-	z-index: 2;
-	background-color:white;
-	border: 1px solid black;
-	width: 500px;
-	height: 3px;
-	padding: 1em;
-	margin: 3em;
-	align-self: center;
-}
 
 .cardBack{
 	position: absolute;
