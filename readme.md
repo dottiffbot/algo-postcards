@@ -1,11 +1,11 @@
 
-#algo print postcards
+# algo print postcards
 
 ⭑*•̩̩͙⊱••••✩••••̩̩͙⊰•*⭑
 
 [project site here](https://dottiffbot.github.io/algo-postcards/)
 
-##tips
+## tips
 
 click anywhere to change the background color!
 
@@ -17,7 +17,7 @@ refresh for a new name...
 ![postcard example](/assets/postcard1.png)
 
 
-##design process
+## design process
 ![coum postcard](/assets/coum-card.png)
 
 I started by searching for postcards from the coum transmissions as reference. On a thumbdrive somewhere I have scans from the Victoria & Albert museum of a bunch of them. Not too many came up in an internet search, but I liked this one. My card isn't too similar but I did start with the pink rectangle.
@@ -43,12 +43,12 @@ I wanted to add a function that would change the background to a random color, a
 
 
 
-##code process
+## code process
 
 This code is pretty simple, since I'm fairly new to p5. I started with some javascript for web, thinking about how I could randomly write people's names on the page, letter by letter from an array. I wanted the letters to be kind of randomly placed, but figured that would be difficult if there was always a varying amount of letters. I wrote it that each character is in a div and those divs are in a grid. The order of the characters in the grid shuffles each time. 
 
 
-##some issues
+## some issues
 
 It's not super responsive as a webpage, sorry! 
 
@@ -61,7 +61,7 @@ Since I ended up writing some javascript in ES6 and some in p5, when you hit sav
 If you type your details in the input, any time you hit 's' it's going to ask you to save.
 
 
-##finally, printed
+## finally, printed
 
 These will all look a little different, maybe even a little wacky... I am only human :-)
 
